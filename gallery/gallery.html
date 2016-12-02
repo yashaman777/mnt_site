@@ -1,0 +1,85 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset=utf-8>
+<title>Галерея</title>
+<script type="text/javascript" src="fancy/lib/jquery-1.10.1.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="fancy/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="fancy/source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="fancy/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="fancy/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="fancy/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="fancy/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="fancy/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="fancy/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	
+
+	
+<script type="text/javascript">
+$(document).ready(function(){
+$("a.photo").fancybox({
+transitionIn:'elastic',
+transitionOut:'elastic',
+speedIn:500,
+speedOut:500,
+hideOnOverlayClick:false
+});
+});
+ </script>
+<style>
+ body {
+    background-image: url(background.jpg);
+    background-size: 100%; /* Путь к фоновому изображению */
+    /*background-color: #c7b39b; /* Цвет фона */*/
+   }
+.gallery img{
+margin:5px;
+border:3px solid #0000ff;
+}
+a.photo:hover img{
+border:3px solid #00ff00;
+}
+
+</style>
+ </head>
+<body>
+<h2 align="center"><p>Фото предоставлены Слюсарчук Степан</p></h2>
+
+ 
+<div class="gallery" align ="center">
+<a rel="gallery" class="photo" href="big/01.jpg"><img src="small/01.jpg" width="150" height="100" alt=""></a>
+<a rel="gallery" class="photo" href="big/02.jpg"><img src="small/02.jpg" width="150" height="100" alt=""></a>
+<a rel="gallery" class="photo" href="big/03.jpg"><img src="small/03.jpg" width="150" height="100" alt=""></a>
+<a rel="gallery" class="photo" href="big/04.jpg"><img src="small/04.jpg" width="150" height="100" alt=""></a>
+<a rel="gallery" class="photo" href="big/05.jpg"><img src="small/05.jpg" width="150" height="100" alt=""></a>
+<a rel="gallery" class="photo" href="big/06.jpg"><img src="small/06.jpg" width="150" height="100" alt=""></a>
+<a rel="gallery" class="photo" href="big/07.jpg"><img src="small/07.jpg" width="150" height="100" alt=""></a>
+<a rel="gallery" class="photo" href="big/08.jpg"><img src="small/08.jpg" width="150" height="100" alt=""></a>
+<a rel="gallery" class="photo" href="big/09.jpg"><img src="small/09.jpg" width="150" height="100" alt=""></a>
+<a rel="gallery" class="photo" href="big/10.jpg"><img src="small/10.jpg" width="150" height="100" alt=""></a>
+<a rel="gallery" class="photo" href="big/11.jpg"><img src="small/11.jpg" width="150" height="100" alt=""></a>
+<a rel="gallery" class="photo" href="big/12.jpg"><img src="small/12.jpg" width="150" height="100" alt=""></a>
+<a rel="gallery" class="photo" href="big/13.jpg"><img src="small/13.jpg" width="150" height="100" alt=""></a>
+<a rel="gallery" class="photo" href="big/14.jpg"><img src="small/14.jpg" width="150" height="100" alt=""></a>
+<a rel="gallery" class="photo" href="big/15.jpg"><img src="small/15.jpg" width="150" height="100" alt=""></a>
+<a rel="gallery" class="photo" href="big/16.jpg"><img src="small/16.jpg" width="150" height="100" alt=""></a>
+<a rel="gallery" class="photo" href="big/17.jpg"><img src="small/17.jpg" width="150" height="100" alt=""></a>
+<a rel="gallery" class="photo" href="big/18.jpg"><img src="small/18.jpg" width="150" height="100" alt=""></a>
+<a rel="gallery" class="photo" href="big/19.jpg"><img src="small/19.jpg" width="150" height="100" alt=""></a>
+
+</div>
+
+<a  href="../index.htm"  style="font-size:40px" ><p align="center">На главную</p></a>
+
+
+</body>
+</html>
